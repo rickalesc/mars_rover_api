@@ -25,6 +25,8 @@ async function createDatabaseIfNotExist() {
         }
     } catch (err) {
         console.error('Error:', err);
+    } finally {
+        process.exit(0);
     }
 }
 
